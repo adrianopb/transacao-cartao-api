@@ -12,7 +12,7 @@ namespace transacao_cartao_api.Entities
         public string CardHolderName { get; set; }
         public int ExpirationMonth { get; set; }
         public int ExpirationYear { get; set; }
-        public int CustomerId { get; set; }
+        public int UserId { get; set; }
         public int SecurityCode { get; set; }
     }
 }

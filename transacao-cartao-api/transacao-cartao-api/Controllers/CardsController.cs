@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Http;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -24,7 +25,7 @@ namespace transacao_cartao_api.Controllers
                 ExpirationMonth = p_Card.ExpirationMonth,
                 ExpirationYear = p_Card.ExpirationYear,
                 SecurityCode = p_Card.SecurityCode,
-                CustomerId = p_Card.CustomerId,
+                UserId = p_Card.UserId,
             };
 
             return Ok(v_Card);

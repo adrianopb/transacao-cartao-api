@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 namespace transacao_cartao_api.Entities
 {
-    public class CarrinhoLivros
+    public class Pedido
     {
-        public int Id { get; set; }
+        public PedidoCabecalho PedidoCabecalho { get; set; }
+        public IEnumerable<PedidoDetalhes> PedidoDetalhes { get; set; }
     }
 }
