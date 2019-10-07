@@ -17,14 +17,7 @@ namespace transacao_cartao_api.Controllers
         [HttpPost]
         public ActionResult<Payment> PostPayment([FromBody]Payment payment)
         {
-            var a = 1;
-        
-            Payment v_Payment = new Payment()
-            {
-                
-            };
-
-            return v_Payment;
+            return Ok(payment);
         }
     }
 }
