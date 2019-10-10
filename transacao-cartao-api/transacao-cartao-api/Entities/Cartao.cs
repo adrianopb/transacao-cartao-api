@@ -1,4 +1,4 @@
-﻿﻿namespace GestaoLivraria.Dados.Entidades
+﻿namespace transacao_cartao_api.Entities
 {
     public class Cartao
     {

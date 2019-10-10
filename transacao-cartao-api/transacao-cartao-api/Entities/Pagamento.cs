@@ -1,11 +1,11 @@
 ﻿namespace transacao_cartao_api.Entities
 {
-    public class Payment
+    public class Pagamento
     {
         public int Id { get; set; }
-        public int Amount { get; set; }
-        public string Currency { get; set; }
-        public int UserId { get; set; }
-        public Card Card { get; set; }
+        public int Valor { get; set; }
+        public string Moeda { get; set; }
+        public int IdUsuario { get; set; }
+        public Cartao Cartao { get; set; }
     }
 }

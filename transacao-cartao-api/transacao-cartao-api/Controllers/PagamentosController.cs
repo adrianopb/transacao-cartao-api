@@ -1,23 +1,25 @@
-﻿using System;
-using System.Net.Http;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using transacao_cartao_api.Entities;
 
 namespace transacao_cartao_api.Controllers
 {
+    /// <summary>
+    /// Controlador de pagamento com cartão
+    /// </summary>
     [Route("v1/[controller]")]
     [ApiController]
-    public class PaymentsController : ControllerBase
+    public class PagamentosController : ControllerBase
     {
-        //Recebe um POST da API de Pagamento
+
+        /// <summary>
+        /// Retorna os detalhes do pagamento após ele ser realizado
+        /// </summary>
+        /// <param name="pagamento"></param>
+        /// <returns></returns>
         [HttpPost]
-        public ActionResult<Payment> PostPayment([FromBody]Payment payment)
+        public ActionResult<Pagamento> PostPayment([FromBody]Pagamento pagamento)
         {
-            return Ok(payment);
+            return Ok(pagamento);
         }
     }
 }
